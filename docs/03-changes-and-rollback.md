@@ -30,7 +30,7 @@ com.android.wallpapercropper
 com.android.wallpaperbackup
 ```
 
-保留：小白文件管理器、蓝牙语音、乐播投屏、应用市场（按机主选择）、以及全部影视 App 本体。
+保留：小白文件管理器、蓝牙语音、乐播投屏、应用市场（按用户选择）、以及全部影视 App 本体。
 
 ## 3. 第三方 App 后台限制
 
