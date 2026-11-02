@@ -1,0 +1,16 @@
+# backups, credentials, build tools
+originals/
+backup/
+.tools/
+*.apk
+*.tgz
+*.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# local SDK paths
+local.properties
+.gradle/

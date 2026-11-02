@@ -1,0 +1,25 @@
+# UNT413A (九联, Amlogic S905L3, Android 9 / API 28) 去预装列表
+# 应用： TV_HOST=192.168.1.50 tools/disable.sh ./debloat-unt413a.txt
+# 还原： TV_HOST=192.168.1.50 tools/restore.sh ./debloat-unt413a.txt com.dangbei.tvlauncher
+# 全部为 pm disable-user（停用，不是卸载），随时可逆。
+#
+# 保留（按用户要求）：小白文件管理器、蓝牙语音、乐播投屏、东阁/DG 应用市场
+# 保留：所有 19 个第三方影视 App（只做后台限制，不在此列表）
+# 保留：蓝牙、遥控、droidlogic 播放/显示组件、输入法、系统核心
+
+# --- 运营商 IPTV / 定制组件（用户不用 IPTV）---
+tv.icntv.vendor
+tv.cmcc.vendor
+com.amt.networkService
+
+# --- 移动定制检测 / 遥测 ---
+com.cmcc.mid.softdetector
+com.um.checkdatasize
+com.um.networkstatus
+
+# --- 屏保 / 壁纸（无人使用）---
+com.android.dreams.phototable
+com.android.dreams.basic
+com.android.wallpaper.livepicker
+com.android.wallpapercropper
+com.android.wallpaperbackup
