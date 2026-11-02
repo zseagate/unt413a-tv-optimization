@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Apply the replacement system scripts.
 # Run scripts/backup-originals.sh first.
-# usage: bash scripts/apply-system.sh [BOX_IP]
+# usage: bash scripts/apply-system.sh <BOX_IP>
 set -euo pipefail
-IP=${1:-192.168.1.50}
+IP=${1:?usage: bash scripts/apply-system.sh BOX_IP}
 ADB=${ADB:-adb}
 HERE="$(cd "$(dirname "$0")/.." && pwd)"
 

@@ -84,7 +84,7 @@ stop IptvService
 stop iptvd
 stop amtprox
 sleep 10
-if ! ping -c1 -W2 223.5.5.5 >/dev/null 2>&1; then
+if ! ping -c1 -W2 www.baidu.com >/dev/null 2>&1; then
     start IptvService; start iptvd; start amtprox
 fi
 while true; do sleep 3600; done
@@ -155,7 +155,7 @@ iptables -I INPUT -i wlan0 -p tcp --dport 7777 -j DROP
 7. 可选卸载 CleanYourTV 启动器。
 
 ```bash
-bash scripts/rollback.sh 192.168.1.50
+bash scripts/rollback.sh <BOX_IP>
 ```
 
 > 恢复系统脚本和 softdetector 后需要重启一次才生效。

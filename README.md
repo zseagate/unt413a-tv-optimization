@@ -34,7 +34,8 @@ everything is done through the box's own ADB and `pm disable-user`.
 | 内存 / 存储 | 2 GB / 8 GB eMMC（`/data` 3.7 GB） |
 | 网络 | 有线 Ethernet，ADB 5555 |
 
-> 示例地址统一写成 `192.168.1.50`。仓库不包含任何设备序列号、STB ID、MAC 或账号信息。
+> 示例地址统一用 `<BOX_IP>` 表示，请替换成你的盒子地址。
+> 仓库不包含任何设备序列号、STB ID、MAC 或账号信息。
 
 ## 关键发现
 
@@ -84,11 +85,12 @@ git clone https://github.com/zseagate/unt413a-tv-optimization
 cd unt413a-tv-optimization
 
 # 1. 连接盒子（先确认 5555 可连）
-adb connect 192.168.1.50:5555
+BOX_IP=你的盒子IP
+adb connect "$BOX_IP:5555"
 
 # 2. 应用预装包清单（需要 cleanyourtv 的 disable.sh，或按 docs 手动 pm disable-user）
 #    参考：https://github.com/Gathin23/cleanyourtv
-TV_HOST=192.168.1.50 tools/disable.sh debloat/debloat-unt413a.txt
+TV_HOST="$BOX_IP" tools/disable.sh debloat/debloat-unt413a.txt
 
 # 3. 需要时替换系统脚本（先备份！/system 需 remount rw）
 adb shell 'mount -o remount,rw /system'
@@ -104,7 +106,7 @@ adb shell 'chmod 755 /system/etc/SMI_RAC_TDAT16M30S.sh /system/bin/startthirdser
 ## 回滚
 
 ```bash
-bash scripts/rollback.sh 192.168.1.50
+bash scripts/rollback.sh "$BOX_IP"
 ```
 
 脚本会恢复预装包、后台权限、系统脚本、防火墙规则，并切回原桌面（如果仍保留）。

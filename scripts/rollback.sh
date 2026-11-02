@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Undo the changes made by this project.
-# usage: bash scripts/rollback.sh [BOX_IP]
+# usage: bash scripts/rollback.sh <BOX_IP>
 set -uo pipefail
-IP=${1:-192.168.1.50}
+IP=${1:?usage: bash scripts/rollback.sh BOX_IP}
 ADB=${ADB:-adb}
 HERE="$(cd "$(dirname "$0")/.." && pwd)"
 ORIG="$HERE/originals"

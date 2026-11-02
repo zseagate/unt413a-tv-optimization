@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Back up the files this project replaces, before changing anything.
-# usage: bash scripts/backup-originals.sh [BOX_IP]
+# usage: bash scripts/backup-originals.sh <BOX_IP>
 set -euo pipefail
-IP=${1:-192.168.1.50}
+IP=${1:?usage: bash scripts/backup-originals.sh BOX_IP}
 ADB=${ADB:-adb}
 HERE="$(cd "$(dirname "$0")/.." && pwd)"
 OUT="$HERE/originals"

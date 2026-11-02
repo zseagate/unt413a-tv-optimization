@@ -1,6 +1,6 @@
 # UNT413A (九联, Amlogic S905L3, Android 9 / API 28) 去预装列表
-# 应用： TV_HOST=192.168.1.50 tools/disable.sh ./debloat-unt413a.txt
-# 还原： TV_HOST=192.168.1.50 tools/restore.sh ./debloat-unt413a.txt com.dangbei.tvlauncher
+# 应用： TV_HOST=<BOX_IP> tools/disable.sh ./debloat-unt413a.txt
+# 还原： TV_HOST=<BOX_IP> tools/restore.sh ./debloat-unt413a.txt com.dangbei.tvlauncher
 # 全部为 pm disable-user（停用，不是卸载），随时可逆。
 #
 # 保留（按用户要求）：小白文件管理器、蓝牙语音、乐播投屏、东阁/DG 应用市场

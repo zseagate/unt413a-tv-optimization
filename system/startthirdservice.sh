@@ -15,7 +15,7 @@ stop IptvService
 stop iptvd
 stop amtprox
 sleep 10
-if ! ping -c1 -W2 223.5.5.5 >/dev/null 2>&1; then
+if ! ping -c1 -W2 www.baidu.com >/dev/null 2>&1; then
     start IptvService
     start iptvd
     start amtprox
