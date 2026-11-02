@@ -23,11 +23,11 @@
 | --- | --- | --- |
 | `com.dangbei.tvlauncher` | 当贝桌面，含友盟推送、悬浮窗、`push` 子进程 | 52 MB + 80 MB |
 | `tv.icntv.vendor` | ICNTV 未来电视 / IPTV 设置（内容推荐） | 57 MB |
-| `tv.cmcc.vendor` | 中国移动定制组件 | — |
-| `com.cmcc.mid.softdetector` | 移动“软件检测”，上报已装应用 | 13 MB |
-| `com.um.checkdatasize` | 移动流量/应用检测 | 67 MB |
+| `tv.cmcc.vendor` | 定制厂商组件 | — |
+| `com.cmcc.mid.softdetector` | 定制“软件检测”，上报已装应用 | 13 MB |
+| `com.um.checkdatasize` | 定制流量/应用检测 | 67 MB |
 | `com.um.networkstatus` | 网络状态上报 | — |
-| `com.amt.networkService` | AMT 网络服务（运营商认证） | — |
+| `com.amt.networkService` | AMT 网络服务（认证相关） | — |
 | `com.xiaobaifile.tv` | 小白文件管理器 | 12 MB |
 | `com.hpplay.happyplay.aw` | 乐播投屏 | — |
 | `com.dongge.manager` / `com.dg.market` | 应用市场（悬浮窗 + 可装应用） | — |

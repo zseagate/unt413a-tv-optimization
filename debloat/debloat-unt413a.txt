@@ -7,12 +7,12 @@
 # 保留：所有 19 个第三方影视 App（只做后台限制，不在此列表）
 # 保留：蓝牙、遥控、droidlogic 播放/显示组件、输入法、系统核心
 
-# --- 运营商 IPTV / 定制组件（用户不用 IPTV）---
+# --- 定制 IPTV / 厂商组件（用户不用 IPTV）---
 tv.icntv.vendor
 tv.cmcc.vendor
 com.amt.networkService
 
-# --- 移动定制检测 / 遥测 ---
+# --- 定制检测 / 遥测 ---
 com.cmcc.mid.softdetector
 com.um.checkdatasize
 com.um.networkstatus

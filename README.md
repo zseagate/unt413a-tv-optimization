@@ -1,6 +1,6 @@
 # UNT413A / UNT431A 机顶盒优化记录
 
-> 一台中国运营商定制 IPTV 盒子（九联 UNT413A，Amlogic S905L3，Android 9）的完整优化过程：
+> 一台九联 UNT413A IPTV 盒子（Amlogic S905L3，Android 9）的完整优化过程：
 > 换桌面、去预装、限制后台、修复出厂测试脚本空转、处理内置 PCDN 代理。
 > 全部改动可逆，不刷机、不 root 新系统，只利用盒子自带的 `userdebug` + ADB。
 
@@ -64,7 +64,7 @@ everything is done through the box's own ADB and `pm disable-user`.
 - 用 `pm disable-user` 停用 12 个预装推广/遥测/屏保包，不卸载、可还原。
 - 对第三方 App 设置 `RUN_IN_BACKGROUND=ignore` + `RUN_ANY_IN_BACKGROUND=ignore`，
   并清掉残留安装包与缓存（约 1.3 GB）。
-- 替换 3 个空转脚本，保留语音、蓝牙遥控和运营商网络所需的 `configserver`/`networkserver`。
+- 替换 3 个空转脚本，保留语音、蓝牙遥控和以太网/显示所需的 `configserver`/`networkserver`。
 - 用 iptables 阻止局域网访问 6800（aria2 RPC）和 7777（PCDN），规则开机自动恢复。
 - 详细记录见 [`docs/`](docs/)。
 

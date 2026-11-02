@@ -88,7 +88,7 @@ logd: logd.daemon: failed to set AID_SYSTEM AID_PACKAGE_INFO groups
 
 `/init.unionman.rc` 里 `class main` 常驻：
 
-- `IptvService`、`iptvd`、`amtprox`（运营商 IPTV 认证/代理）
+- `IptvService`、`iptvd`、`amtprox`（IPTV 认证/代理）
 - `configserver`、`networkserver`（`networktest_server`）
 
 实测：`IptvService`/`iptvd`/`amtprox` 可以停；
