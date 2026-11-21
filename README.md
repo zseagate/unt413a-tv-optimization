@@ -78,6 +78,13 @@ system/                  替换后的系统脚本
 scripts/rollback.sh      一键回滚（adb）
 ```
 
+## 配套项目
+
+TiviMate 播放器与 IPTV 节目源（合并/去重/存活探测、盒内 `http://127.0.0.1:8099/iptv.m3u`
+本地服务、每 4 小时自动刷新并推送盒子）单独维护在私有仓库
+[`zseagate/iptv-tivimate`](https://github.com/zseagate/iptv-tivimate)（节目源清单不公开）。
+本仓库只负责盒子系统层面的去预装与替换脚本。
+
 ## 快速使用
 
 ```bash
